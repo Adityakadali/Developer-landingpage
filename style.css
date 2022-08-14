@@ -70,7 +70,7 @@ nav {
   font-family: "Righteous", sans-serif;
   font-size: 1.6em;
   font-weight: 500;
-  margin: 40px;
+  margin: 0 40px;
 }
 
 .api {
@@ -85,12 +85,15 @@ nav {
 .cards {
   margin-top: 40px;
   display: flex;
-  gap: 1em;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2em;
 }
 
 .card {
   padding: 10px;
   border-radius: 25px;
+  width: 13rem;
 }
 
 .card-logo {
@@ -105,7 +108,6 @@ nav {
   background-color: white;
   padding: 1em;
   border-radius: 25px;
-  /* box-shadow: 1px 1px 5px 2px gray; */
 }
 
 .card-head-active {
@@ -123,14 +125,16 @@ nav {
   display: flex;
   margin: 0 40px;
   gap: 1em;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .blog-card {
   display: flex;
   position: relative;
-  width: 650px;
+  max-width: 600px;
   background-color: white;
-  border-radius: 0px 25px 25px 0px;
+  border-radius: 50px 25px 25px 25px;
 }
 
 .blog-image img {
@@ -143,8 +147,11 @@ nav {
 }
 
 .blog-bottom {
+  display: flex;
+  gap: 1em;
+  align-items: center;
   position: absolute;
-  bottom: -25px;
+  bottom: -15px;
   left: 50%;
 }
 .blog-bottom img {
@@ -154,7 +161,7 @@ nav {
 
 .blog-author {
   width: 150px;
-  position: absolute;
+  /* position: absolute; */
   bottom: 0px;
   left: 50%;
 }
@@ -224,13 +231,13 @@ nav {
 .download-email {
   background-color: #e9edff;
   padding: 5px;
+  display: flex;
   border-radius: 50px;
 }
 
 .download-email input {
   all: unset;
   font-size: 1em;
-  width: 400px;
   padding: 0.5em 1.5em;
   background: transparent;
 }
@@ -290,6 +297,7 @@ nav {
   content: "";
 }
 
-.list, .logos-list {
+.list,
+.logos-list {
   margin-top: 30px;
 }
