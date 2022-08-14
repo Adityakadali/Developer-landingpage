@@ -30,7 +30,12 @@
 }
 
 @media (max-width: 480px) {
+  .download-content h1 {
+    font-size: 2em;
+  }
+
   .download-section {
+    gap: 1em;
     height: fit-content;
   }
 
